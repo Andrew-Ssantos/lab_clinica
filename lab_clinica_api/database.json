@@ -1,0 +1,20 @@
+{
+	"users": [
+		{
+			"id": "86621ca0-d0c9-1e8a-8f7a-7935bb3a80de",
+			"email": "andrew@teste.com",
+			"password": "12341234"
+		}
+	],
+	"adm_users": [
+		{
+			"id": "737b4350-d1f5-1e8a-8f7a-7935bb3a80de",
+			"email": "adm1@teste.com",
+			"password": "!@#!@#"
+		}
+	],
+	"attendantDeskAssignment": [],
+	"patients": [],
+	"patientInformationForm": [],
+	"painelCheckin": []
+}
