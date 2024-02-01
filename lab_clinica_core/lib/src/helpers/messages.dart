@@ -40,22 +40,22 @@ mixin MessageStateMixin {
   void clearInfo() => _infoMessage.value = null;
   void clearSuccess() => _successMessage.value = null;
 
-  void showError(String message) {
+  void showError(String errorMessage) {
     untracked(() => clearError());
-    _errorMessage.value = message;
+    _errorMessage.value = errorMessage;
   }
 
-  void showInfo(String message) {
+  void showInfo(String infoMessage) {
     untracked(() => clearInfo());
-    _infoMessage.value = message;
+    _infoMessage.value = infoMessage;
   }
 
-  void showSuccess(String message) {
+  void showSuccess(String successMessage) {
     untracked(() => clearSuccess());
-    _successMessage.value = message;
+    _successMessage.value = successMessage;
   }
 
-  void clearAllMessages() {
+  void clearMessages() {
     untracked(() {
       clearError();
       clearInfo();
