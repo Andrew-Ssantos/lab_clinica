@@ -2,6 +2,7 @@ import 'package:asyncstate/asyncstate.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
+import 'package:lab_clinica_core/lab_clinica_core.dart';
 import 'package:lab_clinica_core/src/loader/lab_clinica_loader.dart';
 
 class LabClinicaCoreConfig extends StatelessWidget {
@@ -32,6 +33,7 @@ class LabClinicaCoreConfig extends StatelessWidget {
           loader: LabClinicaLoader(),
           builder: (navigatorObserver) {
             return MaterialApp(
+              theme: LabClinicaTheme.lightTheme,
               navigatorObservers: [
                 navigatorObserver,
                 flutterGetItNavObserver,

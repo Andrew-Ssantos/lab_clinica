@@ -6,10 +6,14 @@ import 'package:lab_clinica_self_service/src/services/user_login_service.dart';
 import 'package:lab_clinica_self_service/src/services/user_login_service_impl.dart';
 
 class LoginRouter extends FlutterGetItModulePageRouter {
+  const LoginRouter({super.key});
+
   @override
   List<Bind<Object>> get bindings => [
-        Bind.lazySingleton<UserLoginService>((i) => UserLoginServiceImpl(userRepository: i())),
-        Bind.lazySingleton((i) => LoginController()),
+        Bind.lazySingleton<UserLoginService>(
+          (i) => UserLoginServiceImpl(userRepository: i()),
+        ),
+        Bind.lazySingleton((i) => LoginController(loginService: i())),
       ];
 
   @override
