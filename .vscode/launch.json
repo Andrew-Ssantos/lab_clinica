@@ -47,6 +47,16 @@
 			"request": "launch",
 			"type": "dart",
 			"flutterMode": "release"
-		}
+		},
+		{
+			"name": "lab_clinica_painel DEV",
+			"cwd": "lab_clinica_painel",
+			"request": "launch",
+			"type": "dart",
+			"args": [
+				"--dart-define-from-file",
+				".config/env.json"
+			]
+		},
 	]
 }

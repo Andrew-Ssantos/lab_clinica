@@ -10,7 +10,8 @@
 		{
 			"id": "737b4350-d1f5-1e8a-8f7a-7935bb3a80de",
 			"email": "adm1@teste.com",
-			"password": "!@#!@#"
+			"password": "!@#!@#",
+			"admin": "true"
 		}
 	],
 	"attendantDeskAssignment": [],
