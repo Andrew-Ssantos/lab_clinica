@@ -28,19 +28,14 @@ class _SelfServicePageState extends State<SelfServicePage> with MessageViewMixin
             return;
           case FormSteps.whoIAm:
             baseRoute += 'who-i-am';
-
           case FormSteps.findPatient:
             baseRoute += 'find-patient';
-
           case FormSteps.patient:
             baseRoute += 'patient';
-
           case FormSteps.documents:
             baseRoute += 'documents';
-
           case FormSteps.done:
             baseRoute += 'done';
-
           case FormSteps.restart:
             return;
         }
